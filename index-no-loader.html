@@ -44,6 +44,9 @@
 <script src="js/xvc.js"></script> 
 <script src="js/xvv.js"></script> 
 <script src="js/webflow.js"></script> 
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/animation.gsap.js"></script>
 
 <script>
 	$('html, body').css({'overflow': 'hidden','height': '100%'});
@@ -587,12 +590,24 @@ $('#clean').modal('show');
                   uses haptics to guide a visually impaired user in a city environment.<br>
                   <br>
                   This was a group project, we split the workload into roles, I chose to
-                  be the CTO. Also in my group were <a href="http://www.google.com/search?q=angela+ibanez+design" target="_blank">Angela Ibanez</a>, <a href="http://miataicher.com" target="_blank">Mia Taicher</a> and <a href="http://elvirecoudray.com" target="_blank">Elvire Coudray</a>.<br><br>
+                  be the CTO. Also in my group were <a href="https://www.angelaibanez-design.com" target="_blank">Angela Ibanez</a>, <a href="http://miataicher.com" target="_blank">Mia Taicher</a> and <a href="http://elvirecoudray.com" target="_blank">Elvire Coudray</a>.<br><br>
                   The project involved developing the electronics back-end for the bracelet,
                   circuit design, and the iOS app that interfaced with it. </p>
+                  <div class="anim-trig-s" id="trigger"></div>
                 <img class="content_img" src="Images/ren-casing.jpg" alt=""> </div>
               <div class="col-lg-4"> <img class="content_img" src="Images/AppSC.jpg" alt=""> </div>
+                <div class="anim-trig-m" id="trigger-m"></div>
             </div>
+
+            <!-- <div class="row guibe-scroller"> -->
+              
+                  <div id="imagesequence">
+                    <img id="myimg" class="mimg" src="guibe-sq/0001.jpg"><br>
+                  </div>
+                  <script src="js/guibe_animator.js"></script>
+
+            <!-- </div> -->
+            
             <div class="row">
               <div class="col-lg-8">
                 <p> For three months we researched and conducted interviews. We discovered that the most
